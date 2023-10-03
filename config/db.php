@@ -1,14 +1,13 @@
 <?php
     class db{
-        private $host="172.16.16.50:9906";
-        private $dbname="tech_department";
+        private $host="localhost";
+        private $dbname="web";
         private $user="root";
-        private $password="#n76v%AYX2tl";
+        private $password="";
         public function conexion(){
             try {
                 $PDO = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname,$this->user,$this->password);
                 return $PDO;
-                //For conexcion error
             } catch (PDOException $e) {
                 return $e->getMessage();
             }

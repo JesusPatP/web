@@ -1,13 +1,13 @@
 <?php
-include_once('c://xampp/htdocs/tech_department/dirs.php');
+include_once('c://xampp/htdocs/web/dirs.php');
 include(HEAD_HEAD_PATH);
 
 if (!empty($_SESSION['user'])) {
-    header("Location:/tech_department/view/dashboard/dashboard.php");
+    header("Location:/web/view/dashboard/dashboard.php");
 }
 ?>
 <div>
-    <link rel="stylesheet" href="/tech_department/asset/static/css/sign-in.css">
+    <link rel="stylesheet" href="/web/asset/static/css/sign-in.css">
     <!----------------------- Main Container -------------------------->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <!----------------------- Login Container -------------------------->
@@ -15,7 +15,7 @@ if (!empty($_SESSION['user'])) {
             <!--------------------------- Left Box ----------------------------->
             <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #5c54d4;">
                 <div class="featured-image mb-3">
-                    <img src="/tech_department/asset/static/img/sign-in/undraw_launching_re_tomg.svg" class="img-fluid" style="width: 250px;">
+                    <img src="/web/asset/static/img/sign-in/undraw_launching_re_tomg.svg" class="img-fluid" style="width: 250px;">
                 </div>
                 <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Be Verified</p>
                 <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Join experienced Designers on this platform.</small>
@@ -67,7 +67,7 @@ if (!empty($_SESSION['user'])) {
                         </div>
 
                         <div class="input-group mb-3">
-                            <button class="btn btn-lg btn-light w-100 fs-6"><img src="/tech_department/asset/static/img/sign-in/logo.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
+                            <button class="btn btn-lg btn-light w-100 fs-6"><img src="/web/asset/static/img/sign-in/logo.png" style="width:20px" class="me-2"><small>Sign In with Google</small></button>
                         </div>
                         <div class="row">
                             <small>Don't have account? <a href="#">Sign Up</a></small>
@@ -78,10 +78,10 @@ if (!empty($_SESSION['user'])) {
         </div>
     </div>
     <!--Login-->
-    <script src="/tech_department/asset/static/js/main.js"></script>
+    <script src="/web/asset/static/js/main.js"></script>
 </div>
 <?php
-include_once('c://xampp/htdocs/tech_department/dirs.php');
+include_once('c://xampp/htdocs/web/dirs.php');
 include(DASHBOARD_FOOTER_PATH);
 
 ?>

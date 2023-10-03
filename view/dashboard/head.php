@@ -11,8 +11,8 @@
     <title>Dashboard</title>
 
     <!--Custom style-->
-    <link href="/tech_department/asset/static/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/tech_department/asset/static/css/dashboard.css" />
-    <link rel="stylesheet" href="/tech_department/asset/static/fontawesome/css/all.min.css" />
+    <link href="/web/asset/static/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/web/asset/static/css/dashboard.css" />
+    <link rel="stylesheet" href="/web/asset/static/fontawesome/css/all.min.css" />
 </head>
 <body>

@@ -1,11 +1,11 @@
 <?php
-require_once("c://xampp/htdocs/tech_department/view/head/head.php");
+require_once("c://xampp/htdocs/web/view/head/head.php");
 if (!empty($_SESSION['user'])) {
-    header("Location:/tech_department/view/dashboard/dashboard.php");
+    header("Location:/web/view/dashboard/dashboard.php");
 }
 ?>
 <!-- Custom styles for this template -->
-<link href="/tech_department/asset/static/css/sign-up.css" rel="stylesheet">
+<link href="/web/asset/static/css/sign-up.css" rel="stylesheet">
 <div class="container">
     <main>
         <!--Text-->
@@ -70,5 +70,5 @@ if (!empty($_SESSION['user'])) {
         </div>
     </main>
     <?php
-    require_once("c://xampp/htdocs/tech_department/view/head/footer.php");
+    require_once("c://xampp/htdocs/web/view/head/footer.php");
     ?>

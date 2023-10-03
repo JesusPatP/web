@@ -3,9 +3,9 @@
 //define("ROOT_PATH_OTHER", 'http://' . $_SERVER["DOCUMENT_ROOT"] . '/webroot/mysite/');
 
 //define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'].'/');
-define('ROOT_PATH_RESOURCES', '/'.'tech_department/');
+define('ROOT_PATH_RESOURCES', '/'.'web/');
 //Test path
-define('ROOT_PATH', 'c://xampp/htdocs/tech_department/');
+define('ROOT_PATH', 'c://xampp/htdocs/web/');
 //ASSET
 define('ASSET_PATH', ROOT_PATH.'asset/');
 define('ASSET_STATIC_PATH', ASSET_PATH.'static/');

@@ -24,10 +24,10 @@
           <ul class="navbar-nav ">
       
             <li class="nav-item">
-              <a class="nav-link" href="\tech_department\view\home\signin.php">Inicia Session</a>
+              <a class="nav-link" href="\web\view\home\signin.php">Inicia Session</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="\tech_department\view\home\signup.php">Registrate</a>
+              <a class="nav-link" href="\web\view\home\signup.php">Registrate</a>
             </li>
           </ul>
 
@@ -46,7 +46,7 @@
               <a class="nav-link" href="#">Session de recursos</a>
             </li>
           </ul>
-          <a href="/login/view/home/logout.php" class="boton">Cerrar Sesion</a>
+          <a href="/web/view/home/logout.php" class="boton">Cerrar Sesion</a>
         </div>
       <?php endif ?>
 

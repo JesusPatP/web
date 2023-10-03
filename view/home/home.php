@@ -1,5 +1,5 @@
 <?php
-include_once('c://xampp/htdocs/tech_department/dirs.php');
+include_once('c://xampp/htdocs/web/dirs.php');
 include(HEAD_HEAD_PATH);
 ?>
 

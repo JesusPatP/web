@@ -1,7 +1,7 @@
 <?php
-require_once("c://xampp/htdocs/tech_department/view/dashboard/head.php");
+require_once("c://xampp/htdocs/web/view/dashboard/head.php");
     if(empty($_SESSION['user'])){
-        header("Location:/tech_department/index.php");
+        header("Location:/web/index.php");
     }
 ?>
 
@@ -32,7 +32,7 @@ require_once("c://xampp/htdocs/tech_department/view/dashboard/head.php");
 
                 <!--Logout Button-->
 
-                <a href="/tech_department/view/home/logout.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
+                <a href="/web/view/home/logout.php" class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i
                         class="fas fa-power-off me-2"></i>Logout</a>
             </div>
         </div>
@@ -64,7 +64,7 @@ require_once("c://xampp/htdocs/tech_department/view/dashboard/head.php");
                                 <li><a class="dropdown-item" href="#">Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <!--Logout Button-->
-                                <li><a class="dropdown-item" href="/tech_department/view/home/logout.php">Logout</a></li>
+                                <li><a class="dropdown-item" href="/web/view/home/logout.php">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -210,9 +210,9 @@ require_once("c://xampp/htdocs/tech_department/view/dashboard/head.php");
     </div>
     <!-- /#page-content-wrapper -->
     </div>
-    <script src="/tech_department/asset/static/js/dashboard.js"></script>
+    <script src="/web/asset/static/js/dashboard.js"></script>
     
     <?php
-include_once ('c://xampp/htdocs/tech_department/dirs.php');
+include_once ('c://xampp/htdocs/web/dirs.php');
 include (DASHBOARD_FOOTER_PATH);
 ?>
