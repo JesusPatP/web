@@ -1,7 +1,7 @@
 <?php
 require_once("c://xampp/htdocs/tech_department/view/head/head.php");
 if (!empty($_SESSION['user'])) {
-    header("Location:panel_control.php");
+    header("Location:/tech_department/view/dashboard/dashboard.php");
 }
 ?>
 <!-- Custom styles for this template -->

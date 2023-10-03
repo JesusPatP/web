@@ -1,9 +1,4 @@
-<?php
-require_once("c://xampp/htdocs/tech_department/view/head/head.php");
-?>
-
 <div>
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Inicio</a>
@@ -25,10 +20,16 @@ require_once("c://xampp/htdocs/tech_department/view/head/head.php");
             </li>
           </ul>
 
-          <!--Botons to sign-in-up-->
-          <a href="\tech_department\view\home\login.php" class="boton">Inicia Session</a>
-          <a href="\tech_department\view\home\signup.php" class="
-          boton">Registrate</a>
+          <!--Register area-->
+          <ul class="navbar-nav ">
+      
+            <li class="nav-item">
+              <a class="nav-link" href="\tech_department\view\home\signin.php">Inicia Session</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="\tech_department\view\home\signup.php">Registrate</a>
+            </li>
+          </ul>
 
         </div>
 

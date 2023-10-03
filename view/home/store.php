@@ -17,7 +17,7 @@
                 $error .= "<li>This email already exist</li>";
                 header("Location:signup.php?error=".$error."&&username=".$username."&&email=".$email."&&password=".$password."&&confirmPassword=".$confirmPassword);
             }else{
-                header("Location:login.php");
+                header("Location:signin.php");
             }
         }else{
             $error .= "<li>Las contraseñas son diferentes</li>";

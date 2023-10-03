@@ -1,15 +1,20 @@
 <?php
+
     require_once("c://xampp/htdocs/tech_department/controller/homeController.php");
     session_start();
     $obj = new homeController();
     $email = $obj->cleanEmail($_POST['email']);
     $password = $obj->cleanString($_POST['password']);
     $bandera = $obj->validateUser($email,$password);
+
+    //Validate user
     if($bandera){
+
         $_SESSION['user'] = $email;
-        header("Location:panel_control.php");
+        //To change the route
+        header("Location:/tech_department/view/dashboard/dashboard.php");
     }else{
         $error = "<li>Las claves son incorrectas</li>";
-        header("Location:login.php?error=".$error);
+        header("Location:signin.php?error=".$error);
     }
 ?>

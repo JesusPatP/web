@@ -1,43 +1,37 @@
-html,
-body {
-  height: 100%;
+/*Other*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
 }
-
-.form-signin {
-  max-width: 330px;
-  padding: 1rem;
+/*------------ Login container ------------*/
+.box-area{
+    width: 930px;
 }
-
-.form-signin .form-floating:focus-within {
-  z-index: 2;
+/*------------ Right box ------------*/
+.right-box{
+    padding: 40px 30px 40px 40px;
 }
-
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+/*------------ Custom Placeholder ------------*/
+::placeholder{
+    font-size: 16px;
 }
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.rounded-4{
+    border-radius: 20px;
 }
-.box-eye{
-  position: relative;
+.rounded-5{
+    border-radius: 30px;
 }
-.box-eye button{
-  border: none;
-  position: absolute;
-}
-.changePassword{
-  position: absolute;
-  top: 12px;
-  left: 270px;
-  color: rgb(51, 47, 47);
-  cursor: pointer;
-}
-
-.content-sign-in{
-  margin-top: 3rem;
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px){
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
 }
