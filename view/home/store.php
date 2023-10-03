@@ -1,5 +1,5 @@
 <?php
-    require_once("c://xampp/htdocs/tech_department/controller/homeController.php");
+    require_once("c://xampp/htdocs/web/controller/homeController.php");
     $obj = new homeController();
     $username = $_POST['username'];
     $email = $_POST['email'];

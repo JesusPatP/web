@@ -1,6 +1,6 @@
 <?php
 
-    require_once("c://xampp/htdocs/tech_department/controller/homeController.php");
+    require_once("c://xampp/htdocs/web/controller/homeController.php");
     session_start();
     $obj = new homeController();
     $email = $obj->cleanEmail($_POST['email']);
@@ -12,7 +12,7 @@
 
         $_SESSION['user'] = $email;
         //To change the route
-        header("Location:/tech_department/view/dashboard/dashboard.php");
+        header("Location:/web/view/dashboard/dashboard.php");
     }else{
         $error = "<li>Las claves son incorrectas</li>";
         header("Location:signin.php?error=".$error);
