@@ -3,7 +3,7 @@
         private $MODEL;
         public function __construct()
         {
-            require_once("c://xampp/htdocs/web/model/homeModel.php");
+            require_once(dirname(__DIR__)."/model/homeModel.php");
             $this->MODEL = new homeModel();
         }
         public function saveUser($username,$email,$password){

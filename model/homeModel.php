@@ -1,9 +1,10 @@
 <?php
     class homeModel{
         private $PDO;
+        private $PDO_t;
         public function __construct()
         {
-            require_once("c://xampp/htdocs/web/config/db.php");
+            require_once(dirname(__DIR__)."/config/db.php");
             $pdo = new db();
             $this->PDO = $pdo->conexion();
         }
@@ -24,6 +25,7 @@
             $statement->bindParam(":emailoruser",$emailoruser);
             return ($statement->execute()) ? $statement->fetch()['password'] : false;
         }
+        
     }
 
 ?>

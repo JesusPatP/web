@@ -8,11 +8,13 @@
     <!--Meta-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Dashboard</title>
+    <title><?php echo $title;?></title>
 
-    <!--Custom style-->
-    <link href="/web/asset/static/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/web/asset/static/css/dashboard.css" />
-    <link rel="stylesheet" href="/web/asset/static/fontawesome/css/all.min.css" />
+    <!--Custom style to Dashboard-->
+    <link href="/tech_department/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/tech_department/assets/css/dashboard.css" />
+    <link rel="stylesheet" href="/tech_department/assets/fontawesome/css/all.min.css" />
+    <!--Custom style to Forms-->
+    <link rel="stylesheet" href="/tech_department/assets/css/form.css" />
 </head>
 <body>
