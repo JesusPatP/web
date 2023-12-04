@@ -8,9 +8,8 @@
             $pdo = new db();
             $this->PDO = $pdo->conexion();
         }
-        public function addUserWithVerification($username,$email,$password){
-            $statement = $this->PDO->prepare("INSERT INTO tech_department values(null,:username,:email,:password)");
-            $statement->bindParam(":username",$username);
+        public function addUserWithVerification($email,$password){
+            $statement = $this->PDO->prepare("INSERT INTO tech_department values(null,:email,:password)");
             $statement->bindParam(":email",$email);
             $statement->bindParam(":password",$password);
             try {
@@ -20,9 +19,9 @@
                 return false;
             }
         }
-        public function getPassword($emailoruser){
-            $statement = $this->PDO->prepare("SELECT password FROM tech_department WHERE email = :emailoruser OR username = :emailoruser");
-            $statement->bindParam(":emailoruser",$emailoruser);
+        public function getPassword($email){
+            $statement = $this->PDO->prepare("SELECT password FROM tech_department WHERE email = :email");
+            $statement->bindParam(":email",$email);
             return ($statement->execute()) ? $statement->fetch()['password'] : false;
         }
         

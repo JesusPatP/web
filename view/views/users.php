@@ -3,7 +3,7 @@ $title = 'Users';
 $page = 'users';
 require_once("c://xampp/htdocs/tech_department/view/dashboard/dashboard.php");
 if (empty($_SESSION['user'])) {
-  header("Location:/tech_department/index.php");
+  header("Location:../../index.php");
 }
 ?>
 
@@ -110,8 +110,6 @@ if (empty($_SESSION['user'])) {
 
 </div>
 <!--Form-->
-
 <?php
-include_once('c://xampp/htdocs/tech_department/dirs.php');
-include(DASHBOARD_FOOTER_PATH);
+include_once(dirname(__DIR__,2)."/view/dashboard/footer.php");
 ?>

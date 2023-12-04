@@ -4,14 +4,14 @@ $objeto = new db();
 $conexion = $objeto->conexion();
 
 $id = (isset($_POST['id'])) ? $_POST['id'] : '';
-$username = (isset($_POST['username'])) ? $_POST['username'] : '';
-$email = (isset($_POST['email'])) ? $_POST['email'] : '';
 $password = (isset($_POST['password'])) ? $_POST['password'] : '';
+$email = (isset($_POST['email'])) ? $_POST['email'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 
 switch ($opcion) {
     case 1:
-        $query = "INSERT INTO tech_department (username, email,password) VALUES('$username','$email', '$password') ";
+        $query = "INSERT INTO `tech_department`(`email`, `password`) 
+        VALUES ('$email','$password') ";
         $result = $conexion->prepare($query);
         $result->execute();
 
@@ -21,7 +21,9 @@ switch ($opcion) {
         $data = $result->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2:
-        $query = "UPDATE tech_department SET username='$username', email='$email', password='$password' WHERE id='$id' ";
+        $query = "UPDATE `tech_department` SET 
+        `email`='$email',`password`='$password' 
+        WHERE `id` = $id";
         $result = $conexion->prepare($query);
         $result->execute();
 

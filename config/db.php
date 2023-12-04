@@ -1,9 +1,9 @@
 <?php
     class db{
-        private $host="172.16.16.50:9906";
-        private $dbname="tech_department";
+        private $host="localhost";
+        private $dbname="department";
         private $user="root";
-        private $password="#n76v%AYX2tl";
+        private $password="";
         public function conexion(){
             try {
                 $PDO = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname,$this->user,$this->password);
@@ -22,10 +22,10 @@
 
     class Conexion{	  
         public static function Conectar() {        
-            define('servidor', '172.16.16.50:9906');
-            define('nombre_bd', 'usuarios_db');
+            define('servidor', 'localhost');
+            define('nombre_bd', 'department');
             define('usuario', 'root');
-            define('password', '#n76v%AYX2tl');					        
+            define('password', '');					        
             $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');			
             try{
                 $conexion = new PDO("mysql:host=".servidor."; dbname=".nombre_bd, usuario, password, $opciones);			

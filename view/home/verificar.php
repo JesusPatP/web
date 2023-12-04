@@ -8,10 +8,9 @@ $bandera = $obj->validateUser($email, $password);
 
 //Validate user
 if ($bandera) {
-
     $_SESSION['user'] = $email;
     //To change the route
-    header("Location:/tech_department/view/views/employees_table.php");
+    header("Location:../views/employees_table.php");
 } else {
     $error = "<li>Incorrecta data</li>";
     header("Location:signin.php?error=" . $error);

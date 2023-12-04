@@ -27,12 +27,7 @@ if (!empty($_SESSION['user'])) {
                             <h2>Hello, Register</h2>
                             <p>We are happy for you Register.</p>
                         </div>
-                        <!--Username-->
-                        <div class="col-12">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" name="username" id="username" class="form-control form-control-lg bg-light fs-6" placeholder="Email address" value="<?= (!empty($_GET['username'])) ? $_GET['username'] : "" ?>">
-                        </div>
-
+                       
                         <!--Email-->
                         <div class="col-12">
                             <label for="email" class="form-label">Email address</label>
@@ -79,7 +74,7 @@ if (!empty($_SESSION['user'])) {
         </div>
     </div>
     <!--Login-->
-    <script src="/tech_department/assets/js/main.js"></script>
+    <!--<script src="/tech_department/assets/js/main.js"></script>-->
 </div>
 
 

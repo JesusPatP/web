@@ -1,11 +1,11 @@
 <?php
 require_once dirname(__DIR__) . '/head/head.php';
 if (!empty($_SESSION['user'])) {
-    header("Location:/tech_department/view/dashboard/dashboard.php");
+    header("Location:./view/views/employees_table.php");
 }
 ?>
 <div class="login_conatiner">
-    <link rel="stylesheet" href="/tech_department/assets/css/sign-in.css">
+    <link rel="stylesheet" href="../../assets/css/sign-in.css">
     <!----------------------- Main Container -------------------------->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <!----------------------- Login Container -------------------------->
@@ -13,7 +13,7 @@ if (!empty($_SESSION['user'])) {
             <!--------------------------- Left Box ----------------------------->
             <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #5c54d4;">
                 <div class="featured-image mb-3">
-                    <img src="/tech_department/assets/img/sign-in/undraw_launching_re_tomg.svg" class="img-fluid" style="width: 250px;">
+                    <img src="../../assets/img/sign-in/undraw_launching_re_tomg.svg" class="img-fluid" style="width: 250px;">
                 </div>
                 <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Be Verified</p>
                 <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Join experienced Designers on this platform.</small>

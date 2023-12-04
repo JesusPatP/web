@@ -7,19 +7,19 @@ $password = $_POST['password'];
 $confirmPassword = $_POST['confirmPassword'];
 $error = "";
 
-if (empty($username) || empty($email) || empty($password) || empty($confirmPassword)) {
+if (empty($email) || empty($password) || empty($confirmPassword)) {
     $error .= "<li>Null fields</li>";
-    header("Location:signup.php?error=" . $error . "&&username=" . $username . "&&email=" . $email . "&&password=" . $password . "&&confirmPassword=" . $confirmPassword);
-} else if ($username && $email && $password && $confirmPassword) {
+    header("Location:signup.php?error=" . $error . "&&email=" . $email . "&&password=" . $password . "&&confirmPassword=" . $confirmPassword);
+} else if ($email && $password && $confirmPassword) {
     if ($password == $confirmPassword) {
-        if ($obj->saveUser($username, $email, $password) == false) {
+        if ($obj->saveUser($email, $password) == false) {
             $error .= "<li>This email already exist</li>";
-            header("Location:signup.php?error=" . $error . "&&username=" . $username . "&&email=" . $email . "&&password=" . $password . "&&confirmPassword=" . $confirmPassword);
+            header("Location:signup.php?error=" . $error . "&&email=" . $email . "&&password=" . $password . "&&confirmPassword=" . $confirmPassword);
         } else {
             header("Location:signin.php");
         }
     } else {
         $error .= "<li>Las contraseñas son diferentes</li>";
-        header("Location:signup.php?error=" . $error . "&&username=" . $username . "&&email=" . $email . "&&password=" . $password . "&&confirmPassword=" . $confirmPassword);
+        header("Location:signup.php?error=" . $error . "&&email=" . $email . "&&password=" . $password . "&&confirmPassword=" . $confirmPassword);
     }
 }

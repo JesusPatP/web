@@ -1,9 +1,9 @@
 <?php
-require_once dirname(__DIR__) . '/web/view/head/header.php';
+require_once dirname(__FILE__). '/view/head/header.php';
 ?>
 <?php
-require_once dirname(__DIR__) . '/web/view/home/home.php';
+require_once dirname(__FILE__). '/view/home/home.php';
 ?>
 <?php
-require_once dirname(__DIR__) . '/web/view/head/footer.php';
+require_once dirname(__FILE__). '/view/head/footer.php';
 ?>
